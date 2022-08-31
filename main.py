@@ -19,8 +19,6 @@ model = model.to(device)
 
 transformer = transforms.Compose([
     transforms.Resize((150,150)),
-    #transforms.RandomHorizontalFlip(0.5),
-    #transforms.RandomRotation(45),
     transforms.ToTensor(),
     transforms.Normalize([0.5,0.5,0.5],[0.5,0.5,0.5])])
 
